@@ -1,0 +1,191 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+#KWlogo{
+    padding-left: 40px;
+}
+.cartitems{
+    padding-right: 40px;
+}
+#KWlogo,
+#CARTlogo{
+    height: 20px;
+}
+.cartitems{
+    display: flex;
+    align-content: center;
+}
+.background_image{
+    height: 500px;
+    width: 100%;
+}
+#ontopof{
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    color: white;
+    font-size: 50px;
+    line-height: 70px;
+}
+#new{
+    position: absolute;
+    top: 320px;
+    left: 40px;
+    color: white;
+    font-size: 20px;
+}
+.discover{
+    padding-left: 40px;
+}
+.books{
+    display: flex;
+    justify-content: space-around;
+}
+.book{
+    width: 180px;
+    height: 250px;
+}
+.title{
+    font-size: 20px;
+}
+.author{
+    font-size: 15px;
+    color: rgb(181, 176, 176);
+}
+.cartwhite{
+    height: 15px;
+}
+button{
+    background-color: #6196fe;
+    border-color: #6196fe;
+    display: inline-flex;
+    border-radius: 7px;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.games{
+    display: flex;
+    justify-content: space-around;
+}
+.game{
+    width: 220px;
+    height: 200px;
+}
+footer{
+    background-color: black;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+footer>div>img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+footer>div{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+footer>div>b{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    #KWlogo {
+        padding-left: 0;
+        padding-top: 10px;
+    }
+    .cartitems {
+        padding-right: 0;
+        padding-top: 10px;
+    }
+    #ontopof {
+        top: 30px;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #new {
+        top: 210px;
+        font-size: 16px;
+    }
+    .background_image {
+        height: 300px;
+    }
+    .books, .games {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .book, .game, .handicraft1, .handicraft2, .handicraft3, .handicraft4 {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer>div>img {
+        width: 60px;
+        height: 60px;
+    }
+    footer>div {
+        font-size: 14px;
+    }
+}
+
+/* Tablets and larger devices */
+@media (min-width: 768px) {
+    .header {
+        height: 80px;
+    }
+    #KWlogo, #CARTlogo {
+        height: 40px;
+    }
+    #ontopof {
+        top: 90px;
+        font-size: 60px;
+        line-height: 80px;
+    }
+    #new {
+        top: 440px;
+        font-size: 24px;
+    }
+    .background_image {
+        height: 700px;
+    }
+    .books, .games {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+    .book, .game, .handicraft1, .handicraft2, .handicraft3, .handicraft4 {
+        width: auto;
+    }
+    .footer {
+        flex-direction: row;
+        align-items: center;
+    }
+    footer>div>img {
+        width: 100px;
+        height: 100px;
+    }
+    footer>div {
+        font-size: 16px;
+    }
+}
